@@ -1,0 +1,29 @@
+package LabTest;
+import java.util.Scanner;
+public class LabTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int size;
+		int [][]a = new int[11][11];   
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter the size : ");
+		size=scan.nextInt();
+		
+		 for(int i = 1; i < 11; i++)
+		   {
+		      for(int j = 0; j <10; j++)
+		      {
+		    	 a[i][j] = i+(j*i);
+		         System.out.printf("%4d ", a[i][j]);
+		         
+		      }
+		      System.out.println();
+
+		   }
+	}
+}
+
+
